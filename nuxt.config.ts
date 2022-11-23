@@ -10,7 +10,6 @@ export default defineNuxtConfig({
             postcssOptions: require("./postcss.config.js"),
         },
     },
-    plugins:['@/plugins/motion'],
     modules: ['@nuxtjs/color-mode', 'nuxt-icon'],
     buildModules:[],
     
