@@ -2,10 +2,12 @@
   <div ref="band">
     <shared-banner :opacity="calcOpacity" ref="bannerRef" />
     <SharedNav :opacity="calcOpacity" id="navRef" ref="navRef" class="z-20 " />
-    <div class="z-10">
+    <div class="z-10 overflow-x-hidden">
       <HomeExperience />
       <HomePhilosophy />
       <HomeSkillset />
+      <HomeFrameworks/>
+      <div class=" h-96 w-full bg-green-500"></div>
     </div>
   </div>
 </template>

@@ -3,7 +3,7 @@
     ref="mainNav"
         :class="['sticky top-0 py-4 sticky-nav flex text-white text-lg px-16 md:px-40', { 'bg-black': opacity > 0 }, { 'bg-white/10 backdrop-blur-md ': opacity <= 0 }]">
         <div class="nav-right">
-            <h4>WESLEY <br /> UKADIKE</h4>
+            <h4 class=" font-bold font-aeonik-bold">WESLEY <br /> UKADIKE</h4>
 
         </div>
         <transition name="slide-fade" mode="out-in">
