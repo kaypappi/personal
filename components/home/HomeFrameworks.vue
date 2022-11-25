@@ -1,5 +1,6 @@
 <template>
-    <div :style="{'transform': `translateX(${transformValue}px)`}" ref="target" :data-t="transformValue" :class="`frame-wrapper  text-white border-[#344054] border grid grid-cols-1 md:grid-cols-4`">
+    <div :style="{ 'transform': `translateX(${transformValue}px)` }" ref="target" :data-t="transformValue"
+        :class="`frame-wrapper  text-white border-[#344054] border grid grid-cols-1 md:grid-cols-4`">
         <div v-for=" item in frameworks" :key="item.name"
             class=" border border-[#344054] flex items-center justify-center py-8 flex-col">
             <img class=" w-12 h-12" :src="`/assets/imgs/${item.logo}.svg`" alt="framework">
@@ -14,27 +15,27 @@ import { useElementVisibility, useWindowScroll, useElementBounding } from '@vueu
 const target = ref(null)
 const initialTop = ref(null)
 const targetIsVisible = useElementVisibility(target)
-const { x,top, right, bottom, left, width, height } = useElementBounding(target)
+const { x, top, right, bottom, left, width, height } = useElementBounding(target)
 const { y } = useWindowScroll()
 const transformValue = ref(0)
 
 watchEffect(() => {
-    console.log(targetIsVisible.value)
+
     if (targetIsVisible.value) {
         if (!initialTop.value) {
             initialTop.value = y.value
         }
-        const diff= (y.value-initialTop.value)/2
-        x.value=diff
-        console.log(diff, initialTop.value,y.value,x.value)
-       return transformValue.value=diff
+        const diff = (y.value - initialTop.value) / 2
+        x.value = diff
+
+        return transformValue.value = diff
     }
-    else{
-        initialTop.value=null
+    else {
+        initialTop.value = null
     }
 })
 
-onMounted(()=>{
+onMounted(() => {
     console.log(targetIsVisible.value)
 })
 
@@ -53,9 +54,9 @@ const frameworks = ref([{
 },])
 </script>
 <style >
-.frame-wrapper{
-   position: relative;
-   left: -200px;
-   transition: all 0s linear;
+.frame-wrapper {
+    position: relative;
+    left: -200px;
+    transition: all 0s linear;
 }
 </style>
