@@ -1,7 +1,7 @@
 <template>
     <nav
     ref="mainNav"
-        :class="['sticky top-0 py-4 sticky-nav flex text-white text-lg px-16 md:px-40', { 'bg-black': opacity > 0 }, { 'bg-white/10 backdrop-blur-md ': opacity <= 0 }]">
+        :class="['sticky top-0 py-4  sticky-nav flex text-white text-lg px-16 md:px-40', { '  border-t border-b border-[#344054]': opacity > 0 }, { 'bg-white/10 backdrop-blur-md border-0  shadow-xs shadow-white ': opacity <= 0 }]">
         <div class="nav-right">
             <h4 class=" font-bold font-aeonik-bold">WESLEY <br /> UKADIKE</h4>
 
@@ -10,7 +10,10 @@
             <div key="detRef" ref="detRef" v-if="opacity > 0.0051 && !showMenu" class="nav-description ml-auto flex items-center">
                 <h4>BASED IN LAGOS <br /> NIGERIA, NG</h4>
                 <h4 class="mx-8 md:ml-12 md:mr-24">CURRENTLY SOFTWARE ENGINEER <br /> BLACKCOPPER</h4>
-                <Icon v-element-hover="onHover" name="NuxtIcon" icon="menu" size="32" class=" cursor-pointer" />
+                <div v-element-hover="onHover" class="py-2 px-6 cursor-pointer">
+                    <Icon v-element-hover="onHover" name="NuxtIcon" icon="menu" size="32" class=" cursor-pointer" />
+                </div>
+               
             </div>
             <div v-element-hover="onHover" key="menuRef" ref="menuRef" v-else
                 class="nav-main ml-auto flex items-center">
@@ -48,10 +51,10 @@ const onHover=(state)=>{
 
 </script>
 <style scoped>
-.sticky-nav {
-    border-top: 1px solid #344054;
-    border-bottom: 1px solid #344054;
-}
+/* .sticky-nav{
+    background-image: url('../../assets/imgs/noisebg.png');
+    background-size: contain;
+} */
 
 .slide-fade-enter-active {
     transition: all 0.3s ease-out;

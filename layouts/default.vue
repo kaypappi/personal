@@ -1,9 +1,12 @@
 <template>
-  <div class=" dark:bg-primary-dark h-screen w-screen">
+  <div class="  h-screen w-screen">
     <slot></slot>
   </div>
 </template>
 <style >
+.layout{
+  background-color: rgba(0, 0, 0, 0.92);
+}
 .fade-enter-active {
   animation: coming 0.4s;
   animation-delay: 0.2s;

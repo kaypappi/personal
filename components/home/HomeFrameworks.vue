@@ -31,7 +31,7 @@ watchEffect(() => {
         return transformValue.value = diff
     }
     else {
-        initialTop.value = null
+        // initialTop.value = null
     }
 })
 
