@@ -1,5 +1,5 @@
 <template>
-    <div class=" w-full grid grid-cols-1 md:grid-cols-2 border-t border-b border-[#344054]">
+    <div class=" w-full grid grid-cols-1 md:grid-cols-2 border-t border-b border-grey-700">
         <div class="w-full h-full bg-black">
 
         </div>

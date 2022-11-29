@@ -15,7 +15,8 @@
             <HomeSkillset />
             <HomeFrameworks />
             <HomeProjects class=" h-[58rem] w-full text-white bg-black" />
-            <HomeQuote class=" text-white w-full py-7" />
+            <HomeQuote class=" text-white w-full py-7 bg-[#0f0f0f] border-y border-grey-700" />
+            <HomeAbout class="  my-52 "/>
           </div>
         </div>
       </div>
