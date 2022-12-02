@@ -1,9 +1,9 @@
 <template>
     <nav ref="mainNav"
-        :class="['sticky top-0 py-4  sticky-nav flex text-white text-base  md:text-lg px-6 md:px-40', { '  border-t border-b border-grey-700': opacity > 0 }, { 'bg-white/10 backdrop-blur-md border-0  shadow-xs shadow-white ': opacity <= 0 }]">
+        :class="['sticky top-0 py-4  sticky-nav flex text-white text-base  md:text-lg px-4 md:px-40', { '  border-t border-b border-grey-700': opacity > 0 }, { 'bg-white/10 backdrop-blur-md border-0  shadow-xs shadow-white ': opacity <= 0 }]">
         <div class="nav-right flex items-center">
 
-            <img class=" w-16 mb-2" src="../../assets/imgs/winkbit.png" alt="logo">
+            <img class=" w-16 mb-2 hover:rotate-180 hover:mb-0 hover:mt-2 transition-all" src="../../assets/imgs/winkbit.png" alt="logo">
 
             <h4 class=" font-bold font-aeonik-bold">WESLEY <br /> UKADIKE</h4>
 

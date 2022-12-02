@@ -9,14 +9,16 @@
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.1.6",
-    "autoprefixer": "^10.4.12",
-    "nuxt": "3.0.0-rc.11",
+    "autoprefixer": "^10.4.13",
+    "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.7",
-    "postcss": "^8.4.17",
-    "tailwindcss": "^3.1.8"
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
   },
   "dependencies": {
     "@vueuse/components": "^9.6.0",
-    "@vueuse/core": "^9.6.0"
+    "@vueuse/core": "^9.6.0",
+    "motion": "^10.14.3",
+   "@vueuse/motion": "^2.0.0-beta.23"
   }
 }

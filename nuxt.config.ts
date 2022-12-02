@@ -5,12 +5,28 @@ export default defineNuxtConfig({
         classSuffix: "",
     },
     css: ["@/assets/css/styles.css"],
-    build: {
-        postcss: {
-            postcssOptions: require("./postcss.config.js"),
+    
+    postcss: {
+        plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
         },
     },
-    modules: ['@nuxtjs/color-mode', 'nuxt-icon'],
-    buildModules:[],
-    
+    modules: ['@nuxtjs/color-mode', 'nuxt-icon','@vueuse/motion/nuxt'],
+    motion: {
+        directives: {
+          'pop-bottom': {
+            initial: {
+              scale: 0,
+              opacity: 0,
+              y: 100
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              y: 0
+            },
+          }
+        }
+    },
 })
