@@ -5,28 +5,32 @@ export default defineNuxtConfig({
         classSuffix: "",
     },
     css: ["@/assets/css/styles.css"],
-    
+    router: {
+        scrollBehavior() {
+            return { x: 0, y: 0 }
+        }
+    },
     postcss: {
         plugins: {
             tailwindcss: {},
             autoprefixer: {},
         },
     },
-    modules: ['@nuxtjs/color-mode', 'nuxt-icon','@vueuse/motion/nuxt'],
+    modules: ['@nuxtjs/color-mode', 'nuxt-icon', '@vueuse/motion/nuxt'],
     motion: {
         directives: {
-          'pop-bottom': {
-            initial: {
-              scale: 0,
-              opacity: 0,
-              y: 100
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-              y: 0
-            },
-          }
+            'pop-bottom': {
+                initial: {
+                    scale: 0,
+                    opacity: 0,
+                    y: 100
+                },
+                visible: {
+                    scale: 1,
+                    opacity: 1,
+                    y: 0
+                },
+            }
         }
     },
 })

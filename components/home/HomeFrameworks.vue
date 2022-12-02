@@ -13,6 +13,7 @@ import { ref, computed, watchEffect } from 'vue'
 import { useElementVisibility, useWindowScroll, useElementBounding } from '@vueuse/core'
 import { filename } from 'pathe/utils';
 
+
 const target = ref(null)
 const initialTop = ref(null)
 const targetIsVisible = useElementVisibility(target)
@@ -28,13 +29,15 @@ watchEffect(() => {
         }
         const diff = (y.value - initialTop.value) / 2
         x.value = diff
-
-        return transformValue.value = diff
+        const min = Math.min(Math.max(diff, -(width.value + (width.value/2))), width.value + (width.value/2))
+         Math.min(Math,width.value + (width.value/2))
+        return transformValue.value = min
     }
     else {
         // initialTop.value = null
     }
 })
+
 
 const glob = import.meta.glob('~/assets/imgs/*.svg', { eager: true });
 const images = Object.fromEntries(
