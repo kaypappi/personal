@@ -1,5 +1,5 @@
 <template>
-    <div class="text-white relative z-10 px-4 py-14 md:py-32 md:px-40 grid grid-cols-1 md:grid-cols-2">
+    <div class="text-white relative z-10 py-14 md:py-32 px-4 md:px-16 xl:px-40 grid grid-cols-1 lg:grid-cols-2">
         <div>
             <h4 class=" text-5xl mb-4 font-aeonik-bold">Skillset</h4>
             <p class=" text-sm font-light max-w-xs leading-relaxed">With over 4+ years of professional experience in
@@ -7,7 +7,7 @@
                 when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any
                 challenge.</p>
         </div>
-        <div class=" mt-8 md:mt-0">
+        <div class=" mt-8 lg:mt-0">
             <div class=" grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div v-motion-slide-visible-top>
                     <Icon name="NuxtIcon" icon="cubes" />

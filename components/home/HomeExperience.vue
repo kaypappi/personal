@@ -1,5 +1,5 @@
 <template>
-    <div class="experience px-4 py-32 md:px-40 relative z-10  text-white grid grid-cols-1 md:grid-cols-2">
+    <div class="experience py-32 px-4 md:px-16 xl:px-40 relative z-10  text-white grid gap-8 lg:gap-0 grid-cols-1 lg:grid-cols-2">
         <div >
             <h4 class=" text-sm">EXPERIENCE</h4>
             <h1 class="text-5xl my-4 font-aeonik-bold max-w-md">Companies I have worked with in the past</h1>

@@ -1,7 +1,7 @@
 <template>
-  <div :style="{ opacity }" class=" sticky  top-0 z-0 text-white py-20 md:py-32 px-4 md:px-40 text-center ">
+  <div :style="{ opacity }" class=" sticky  top-0 z-0 text-white py-20 md:py-32 px-4 md:px-16 xl:px-40 text-center ">
     <h1 v-motion-slide-visible-bottom
-      class=" mx-auto banner-text font-aeonik-bold text-3xl md:text-7xl max-w-5xl leading-normal font-extrabold">
+      class=" mx-auto banner-text font-aeonik-bold text-3xl md:text-5xl lg:text-7xl max-w-5xl leading-normal font-extrabold">
       Software engineer, based in Lagos - Strategically building things that actually work.</h1>
     <div v-motion-slide-bottom
       class=" hidden md:flex absolute -bottom-14 right-20 bg-white rounded-full w-56 h-56 items-center justify-center">

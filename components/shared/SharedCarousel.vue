@@ -1,7 +1,7 @@
 <template>
     <div class="carousel-container relative md:min-h-[58rem]">
         <div v-for="(item, index) in items"
-            :class="`absolute py-32 px-16 md:px-40 top-0 left-0 right-0 bottom-0 grid gap-16  grid-cols-12  ${index === activeItem ? 'z-20' : 'z-10'}`">
+            :class="`absolute py-32 px-4 md:px-16 xl:px-40 top-0 left-0 right-0 bottom-0 grid gap-16  grid-cols-12  ${index === activeItem ? 'z-20' : 'z-10'}`">
             <transition name="slide-down" mode="out-in">
                 <div v-if="index === activeItem" :class="`left-carousel col-span-5  `">
                     <div class="w-full h-[40rem] bg-slate-500">
