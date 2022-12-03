@@ -43,7 +43,10 @@
 import { vElementHover } from '@vueuse/components'
 
 defineProps({
-    opacity: Number
+    opacity: {
+        type:Number,
+        default:1
+    }
 })
 
 const detRef = ref(null)

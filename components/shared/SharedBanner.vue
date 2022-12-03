@@ -13,7 +13,10 @@
 <script setup>
 
 defineProps({
-  opacity: Number,
+  opacity: {
+    type:Number,
+    default:1
+  },
 })
 
 </script>
