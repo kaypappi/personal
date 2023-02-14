@@ -1,6 +1,6 @@
 <template>
     <nav ref="mainNav"
-        :class="['sticky top-0 py-4  sticky-nav flex text-white text-base  md:text-lg px-4 md:px-16 xl:px-40', { '  border-t border-b border-grey-700': opacity > 0 }, { 'bg-white/10 backdrop-blur-md border-0  shadow-xs shadow-white ': opacity <= 0 }]">
+        :class="['sticky top-0 py-0  sticky-nav !leading-tight flex text-white text-sm  md:text-base px-4 md:px-16 xl:px-40', { '  border-t border-b border-grey-700': opacity > 0 }, { 'bg-white/10 backdrop-blur-md border-0  shadow-xs shadow-white ': opacity <= 0 }]">
         <div class="nav-right flex items-center">
 
             <img class=" w-16 mb-2 hover:rotate-180 hover:mb-0 hover:mt-2 transition-all" src="../../assets/imgs/winkbit.png" alt="logo">
@@ -8,7 +8,7 @@
             <h4 class=" font-bold font-aeonik-bold">WESLEY <br /> UKADIKE</h4>
 
         </div>
-        <template class=" hidden lg:flex ml-auto items-center ">
+        <template class=" hidden lg:flex ml-auto items-center font-extralight  font-aeonik-light">
             <transition name="slide-fade" mode="out-in">
                 <div key="detRef" ref="detRef" v-if="opacity > 0.0051 && !showMenu"
                     class="nav-description ml-auto flex items-center">

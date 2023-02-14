@@ -3,10 +3,10 @@
         <div >
             <h4 class=" text-sm">EXPERIENCE</h4>
             <h1 class="text-5xl my-4 font-aeonik-bold max-w-md">Companies I have worked with in the past</h1>
-            <h6 class=" text-xs text-gray-400">Always passionate about building useful products</h6>
+            <h6 class=" text-xs font-aeonik-light">Always passionate about building useful products</h6>
         </div>
         <div >
-            <SharedExperience v-for="experience in experiences" :key="experience.company" :experience="experience" class=" mt-10" />
+            <SharedExperience v-for="(experience, index) in experiences" :is-last="index >=experiences.length-1" :key="experience.company" :experience="experience" :class=" ['mt-10']" />
         </div>
     </div>
 </template>

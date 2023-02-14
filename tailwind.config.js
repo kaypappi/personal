@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'sen':['Sen'],
+        'aeonik-light':['AeonikLight'],
         'aeonik':['Aeonik'],
         'aeonik-bold':['AeonikBold']
       },

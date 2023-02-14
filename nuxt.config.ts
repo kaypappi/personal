@@ -6,9 +6,7 @@ export default defineNuxtConfig({
     },
     css: ["@/assets/css/styles.css"],
     router: {
-        scrollBehavior() {
-            return { x: 0, y: 0 }
-        }
+        
     },
     postcss: {
         plugins: {
@@ -16,7 +14,7 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
-    modules: ['@nuxtjs/color-mode', 'nuxt-icon', '@vueuse/motion/nuxt'],
+    modules: ['@nuxtjs/color-mode', '@vueuse/motion/nuxt','nuxt-icons'],
     motion: {
         directives: {
             'pop-bottom': {
