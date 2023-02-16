@@ -38,12 +38,12 @@
                 <button
                     class="w-12 flex items-center justify-center h-12 border border-slate-400 text-slate-400 hover:text-white hover:border-white rounded-full "
                     @click="next">
-                    <Icon class=" " name="ic:sharp-arrow-downward" />
+                    <Icon name="ph:arrow-down-bold"  />
                 </button>
                 <button
                     class="w-12 flex items-center rotate-180 justify-center h-12 border border-slate-400 text-slate-400 hover:text-white hover:border-white rounded-full "
                     @click="prev">
-                    <Icon name="ic:sharp-arrow-downward" />
+                    <Icon name="ph:arrow-down-bold"  />
                 </button>
 
             </div>

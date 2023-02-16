@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7ac2553 (main merge)
 node_modules
 *.log*
 .nuxt
@@ -8,6 +11,7 @@ node_modules
 .output
 .env
 dist
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 09353c0 (feat: bootstrap sanity studio)
@@ -41,3 +45,5 @@ dist
 >>>>>>> 09353c0 (feat: bootstrap sanity studio)
 =======
 >>>>>>> 09353c0 (feat: bootstrap sanity studio)
+=======
+>>>>>>> 7ac2553 (main merge)

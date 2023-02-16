@@ -1,12 +1,12 @@
 <template>
-  <div ref="band" class=" bg-black">
-    <div class="noisebg sticky  top-0 z-0">
-      <div class="layout relative opacity-100">
+  <div ref="band" class="bg-black">
+    <div class="noisebg  sticky  top-0 z-0">
+      <div class="layout relative">
         <shared-banner :opacity="calcOpacity" ref="bannerRef" />
       </div>
     </div>
     <div class="relative bg-black">
-      <div class="relative noisebg">
+      <div class="relative noisebg ">
         <div class=" layout">
           <SharedNav :opacity="calcOpacity" id="navRef" ref="navRef" class="z-40 " />
           <div class="relative z-10 overflow-x-hidden ">

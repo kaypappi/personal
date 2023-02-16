@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
+const settingsScreens = require('./tailwind.settings.screens')
+const settingsFontSizes = require('./tailwind.settings.fontSizes')
 module.exports = {
   darkMode: 'class',
   mode: "jit",
@@ -14,6 +16,8 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
+    screens: settingsScreens,
+    fontSize: settingsFontSizes,
     extend: {
       fontFamily: {
         'sen':['Sen'],

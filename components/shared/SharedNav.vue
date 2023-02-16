@@ -1,6 +1,6 @@
 <template>
     <nav ref="mainNav"
-        :class="['sticky top-0 py-0  sticky-nav !leading-tight flex text-white text-sm  md:text-base px-4 md:px-16 xl:px-40', { '  border-t border-b border-grey-700': opacity > 0 }, { 'bg-white/10 backdrop-blur-md border-0  shadow-xs shadow-white ': opacity <= 0 }]">
+        :class="['sticky top-0 py-0  sticky-nav !leading-tight flex text-white text-sm px-4 md:px-16 xl:px-40', { '  border-t border-b border-grey-700': opacity > 0 }, { 'bg-white/10 backdrop-blur-md border-0  shadow-xs shadow-white ': opacity <= 0 }]">
         <div class="nav-right flex items-center">
 
             <img class=" w-16 mb-2 hover:rotate-180 hover:mb-0 hover:mt-2 transition-all" src="../../assets/imgs/winkbit.png" alt="logo">
@@ -15,7 +15,7 @@
                     <h4>BASED IN LAGOS <br /> NIGERIA, NG</h4>
                     <h4 class="mx-8 md:ml-12 md:mr-24">CURRENTLY SOFTWARE ENGINEER <br /> BLACKCOPPER</h4>
                     <div v-element-hover="onHover" class="py-2 px-6 cursor-pointer">
-                        <Icon v-element-hover="onHover" name="NuxtIcon" icon="menu" size="32" class=" cursor-pointer" />
+                        <nuxt-icon v-element-hover="onHover" icon="menu"  class=" cursor-pointer w-6 h-max text-white" />
                     </div>
 
                 </div>
@@ -31,7 +31,7 @@
             </transition>
         </template>
         <div class="py-2 px-6 cursor-pointer flex items-center lg:hidden ml-auto ">
-            <Icon @click="toggleSideNav" name="NuxtIcon" icon="menu" size="32" class=" cursor-pointer" />
+            <nuxt-icon @click="toggleSideNav" icon="menu" class=" cursor-pointer w-6 h-max" />
         </div>
         <transition name="slide">
             <SharedSideNav v-if="showSideNav" :toggleSideNav="toggleSideNav" />

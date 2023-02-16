@@ -6,6 +6,9 @@
     .text{
         @apply text-secondary-500 dark:text-white 
     }
+    .h1{
+      
+    }
 }
 
 @font-face {

@@ -1,5 +1,5 @@
 <template>
-  <div ref="band" class="font-aeonik   bg-black">
+  <div ref="band" class="font-aeonik">
     <!-- <NuxtLoadingIndicator color="#f04f43" /> -->
     <NuxtLayout>
       <NuxtPage />
@@ -11,7 +11,7 @@
 </script>
 <style>
 .noisebg{
-  background-image: url('./assets/imgs/noisebg.png');
+  background-image: url('./assets/imgs/noisebg.webp');
   background-size: inherit;
 }
 </style>

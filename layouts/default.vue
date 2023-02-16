@@ -1,6 +1,6 @@
 <template>
   <transition name="fade" mode="out-in">
-    <div v-if="loading" class="page-loader  vw-100 vh-100 d-flex align-items-center justify-content-center">
+    <div v-if="loading" class="page-loader  vw-100 vh-100 d-flex align-items-center justify-content-center bg-black">
       <div class=" h-screen w-screen flex items-center relative justify-center ">
         <svg class=" absolute top-[50%] left-[50%]" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
           <!-- <circle cx="100" cy="100" r="80" pathLength="1"></circle> -->
@@ -15,7 +15,7 @@
     </div>
 
 
-    <div v-else class="  h-screen w-screen noisebg">
+    <div v-else class="  h-screen w-screen ">
       <slot></slot>
     </div>
   </transition>
@@ -52,7 +52,7 @@ onMounted(() => {
 </script>
 <style >
 .layout {
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .fade-enter-active {
@@ -65,8 +65,8 @@ onMounted(() => {
   animation: going 0.4s;
 }
 
-circle,
-path {
+.page-loader circle,
+.page-loader path {
   fill: transparent;
   stroke: #57EB64;
   stroke-width: 6px;
@@ -82,7 +82,7 @@ path {
   bottom: 0;
 }
 
-circle {
+.page-loader circle {
   transform-origin: 100px 100px;
   transform: rotate(-90deg);
 }
