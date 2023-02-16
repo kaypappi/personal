@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7ac2553 (main merge)
+
 node_modules
 *.log*
 .nuxt
@@ -11,10 +7,6 @@ node_modules
 .output
 .env
 dist
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 09353c0 (feat: bootstrap sanity studio)
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # Dependencies
@@ -41,9 +33,4 @@ dist
 
 # Typescript
 *.tsbuildinfo
-<<<<<<< HEAD
->>>>>>> 09353c0 (feat: bootstrap sanity studio)
-=======
->>>>>>> 09353c0 (feat: bootstrap sanity studio)
-=======
->>>>>>> 7ac2553 (main merge)
+
