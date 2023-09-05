@@ -12,7 +12,7 @@
             <transition name="slide-fade" mode="out-in">
                 <div key="detRef" ref="detRef" v-if="opacity > 0.0051 && !showMenu"
                     class="nav-description ml-auto flex items-center">
-                    <h4>BASED IN LAGOS <br /> NIGERIA, NG</h4>
+                    <h4>BASED IN ONTARIO <br /> CANADA, CA</h4>
                     <h4 class="mx-8 md:ml-12 md:mr-24">CURRENTLY SOFTWARE ENGINEER <br /> BLACKCOPPER</h4>
                     <div v-element-hover="onHover" class="py-2 px-6 cursor-pointer">
                         <nuxt-icon v-element-hover="onHover" icon="menu"  class=" cursor-pointer w-6 h-max text-white" />
